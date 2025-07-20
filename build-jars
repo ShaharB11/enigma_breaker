@@ -1,0 +1,5 @@
+#!/bin/bash
+javac -d out *.java
+jar cfe enigma_breaker.jar com.example.enigma_breaker.Server -C out .
+jar cfe enigma_breaker_agent.jar com.example.enigma_breaker.Agent -C out .
+jar cfe encrypt.jar com.example.enigma_breaker.Enigma -C out .
